@@ -1,4 +1,4 @@
-import { BskyAgent } from '@atproto/api';
+import { AtpAgent } from '@atproto/api';
 import * as dotenv from 'dotenv';
 import { CronJob } from 'cron';
 import * as process from 'process';
@@ -6,7 +6,7 @@ import * as process from 'process';
 dotenv.config();
 
 // Create a Bluesky Agent 
-const agent = new BskyAgent({
+const agent = new AtpAgent({
     service: 'https://bsky.social',
   })
 
@@ -14,7 +14,7 @@ const agent = new BskyAgent({
 async function main() {
     await agent.login({ identifier: process.env.BLUESKY_USERNAME!, password: process.env.BLUESKY_PASSWORD!})
     await agent.post({
-        text: "삐빅 리포봇 시험중"
+        text: "삐빅 리포봇 시험중 222"
     });
     console.log("리포봇이 움직였어요...")
 }

@@ -1,0 +1,20 @@
+{
+  "name": "gongjyosalrpbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@atproto/api": "^0.13.14",
+    "cron": "^3.1.8",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.7"
+  }
+}
