@@ -12,7 +12,8 @@
   "dependencies": {
     "@atproto/api": "^0.13.14",
     "cron": "^3.1.8",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "gongjyosalrpbot": "file:"
   },
   "devDependencies": {
     "@types/node": "^22.8.7"

@@ -11,10 +11,35 @@ const agent = new AtpAgent({
   })
 
 
+// function getRandomInt(min: number, max: number): number {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+const messages: string[] = [
+    "테스트를 해요",
+    "이게 맞나",
+    "저게 맞나",
+    "모르겠어요"
+];
+
+// 무작위 메시지 출력
+function getRandomMessage(): string {
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    return messages[randomIndex];
+}
+
+
+
+
 async function main() {
+    // const
+    // const randomInt = getRandomInt(1, 10);
+    // console.log(randomInt);
     await agent.login({ identifier: process.env.BLUESKY_USERNAME!, password: process.env.BLUESKY_PASSWORD!})
     await agent.post({
-        text: "삐빅 리포봇 시험중 222"
+        text: getRandomMessage()
     });
     console.log("리포봇이 움직였어요...")
 }
