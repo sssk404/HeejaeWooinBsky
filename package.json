@@ -16,6 +16,7 @@
     "gongjyosalrpbot": "file:"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.9",
     "@types/node": "^22.8.7"
   }
 }
